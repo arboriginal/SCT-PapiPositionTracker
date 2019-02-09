@@ -1,0 +1,68 @@
+positions:
+  arboriginal: # Example of position of a player (require "otherplayer" addon for PlaceholderAPI)
+    x: "%otherplayer_locx_arboriginal%"
+    z: "%otherplayer_locz_arboriginal%"
+
+settings:
+  symbol: "§6♅" # Symbol displayed on the compass to represent this kind of trackers positions.
+  temp:   "☧"   # Advanced: Symbol temporary used by the plugin, must be unique, 1 char and not used in "symbol".
+
+  limits:
+    START: 2 # Number of maximum simultaneous positions a player (from this tracker) can track
+
+locales:
+  en:
+    name: "papi"
+
+    list: "{prefix}&rNamed positions: {list}."
+    list_empty: "{prefix}&rNo named positions."
+
+    ADD: "{prefix}&aNamed position &e{target}&a has been created."
+    DEL: "{prefix}&aNamed position &e{target}&a has been deleted."
+    START: "{prefix}&6You are now tracking &e{target}&6 position."
+    STOP: "{prefix}&6You no longer track &e{target}&6 position."
+
+    help:
+      noargs: |
+        &r- &c/{command} &e{tracker}
+        &7  Show list of trackable positions.
+      ADD: |
+        &r- &c/{command} &e{tracker} &6{ADD} &3<name> &b<x> <z>
+        &7  Create a new trackable position.
+      DEL: |
+        &r- &c/{command} &e{tracker} &6{DEL} &3<name>
+        &7  Remove this trackable position.
+      START: |
+        &r- &c/{command} &e{tracker} &6{START} &3<name>
+        &7  Begin the tracking of this named position.
+      STOP: |
+        &r- &c/{command} &e{tracker} &6{STOP} &3<name>
+        &7  End the tracking of this named position.
+
+  fr:
+    name: "papi"
+
+    list: "{prefix}&rPositions nommées : {list}."
+    list_empty: "{prefix}&rAucune position nommée."
+
+    ADD: "{prefix}&aLa position &e{target}&a a été créée."
+    DEL: "{prefix}&aLa position &e{target}&a a été supprimée."
+    START: "{prefix}&6Tu pistes maintenant la position &e{target}&6."
+    STOP: "{prefix}&6Tu ne pistes plus la position &e{target}&6."
+
+    help:
+      noargs: |
+        &r- &c/{command} &e{tracker}
+        &7  Affiche la liste des positions nommées.
+      ADD: |
+        &r- &c/{command} &e{tracker} &6{ADD} &3<nom> &b<x> <z>
+        &7  Crée une position nommée.
+      DEL: |
+        &r- &c/{command} &e{tracker} &6{DEL} &3<nom>
+        &7  Supprime une position nommée.
+      START: |
+        &r- &c/{command} &e{tracker} &6{START} &3<nom>
+        &7  Démarre le pistage d'une position nommée.
+      STOP: |
+        &r- &c/{command} &e{tracker} &6{STOP} &3<nom>
+        &7  Arrête le pistage d'une position nommée.
