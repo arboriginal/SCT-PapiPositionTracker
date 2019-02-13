@@ -4,6 +4,8 @@ positions:
     z: "%otherplayer_locz_arboriginal%"
 
 settings:
+  check_update: true # If true, when you (re)load the plugin, it try to check if a new version is available
+  
   symbol: "§6♅" # Symbol displayed on the compass to represent this kind of trackers positions.
   temp:   "☧"   # Advanced: Symbol temporary used by the plugin, must be unique, 1 char and not used in "symbol".
 

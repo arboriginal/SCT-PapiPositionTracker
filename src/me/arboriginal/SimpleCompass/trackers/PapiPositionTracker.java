@@ -19,6 +19,25 @@ public class PapiPositionTracker extends AbstractTracker {
   }
 
   // ----------------------------------------------------------------------------------------------
+  // Tracker methods
+  // ----------------------------------------------------------------------------------------------
+
+  @Override
+  public String github() {
+    return "arboriginal/SCT-PapiPositionTracker";
+  }
+
+  @Override
+  public String trackerID() {
+    return "PAPI_POSITION";
+  }
+  
+  @Override
+  public String version() {
+    return "2";
+  }
+
+  // ----------------------------------------------------------------------------------------------
   // Actions methods
   // ----------------------------------------------------------------------------------------------
 
@@ -32,15 +51,6 @@ public class PapiPositionTracker extends AbstractTracker {
     }
 
     return list;
-  }
-
-  // ----------------------------------------------------------------------------------------------
-  // Tracker methods
-  // ----------------------------------------------------------------------------------------------
-
-  @Override
-  public String trackerID() {
-    return "PAPI_POSITION";
   }
 
   // ----------------------------------------------------------------------------------------------
@@ -67,7 +77,7 @@ public class PapiPositionTracker extends AbstractTracker {
             Double.parseDouble(PlaceholderAPI.setPlaceholders(player, datas().getString(key + ".x"))),
             Double.parseDouble(PlaceholderAPI.setPlaceholders(player, datas().getString(key + ".z")))
         };
-        
+
         return coords;
       }
       catch (Exception e) {
