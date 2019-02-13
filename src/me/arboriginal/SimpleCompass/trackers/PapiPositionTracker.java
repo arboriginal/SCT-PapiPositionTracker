@@ -34,7 +34,7 @@ public class PapiPositionTracker extends AbstractTracker {
   
   @Override
   public String version() {
-    return "2";
+    return "3";
   }
 
   // ----------------------------------------------------------------------------------------------
@@ -57,6 +57,7 @@ public class PapiPositionTracker extends AbstractTracker {
   // Targets methods
   // ----------------------------------------------------------------------------------------------
 
+  @Override
   public List<String> availableTargets(Player player, String startWith) {
     List<String> list = new ArrayList<String>();
     if (datas().getKeys(false).isEmpty()) return list;
@@ -68,6 +69,7 @@ public class PapiPositionTracker extends AbstractTracker {
     return listFiltered(player, list);
   }
 
+  @Override
   public double[] get(Player player, String name) {
     String key = key(player, name);
 

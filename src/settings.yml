@@ -9,6 +9,8 @@ settings:
   symbol: "§6♅" # Symbol displayed on the compass to represent this kind of trackers positions.
   temp:   "☧"   # Advanced: Symbol temporary used by the plugin, must be unique, 1 char and not used in "symbol".
 
+  auto_disabled: 5 # If player closer than this (in blocks) from the target, the tracking stop automatically (0 to disable).
+
   limits:
     START: 2 # Number of maximum simultaneous positions a player (from this tracker) can track
 
