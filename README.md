@@ -27,7 +27,7 @@ Read [settings.yml](https://github.com/arboriginal/SCT-PapiPositionTracker/blob/
     - **scompass.track**
     - **scompass.track.PAPI_POSITION** (or **scompass.track.***)
 - All named positions in `PapiPositionTracker.yml` use dynamic permissions:
-    - **scompass.track.PAPI_POSITION.defined.<name>**
+    - **scompass.track.PAPI_POSITION.defined.`<name>`**
     - **scompass.track.PAPI_POSITION.defined.arboriginal** for example to track the position "arboriginal"
 - To have access to all named positions (without **scompass.track.PAPI_POSITION.defined.<name>** for each), players need:
     - **scompass.track.PAPI_POSITION.defined.***
