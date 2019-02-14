@@ -3,6 +3,15 @@
 This is a tracker addon for [SimpleCompass](https://www.spigotmc.org/resources/simplecompass.63140/).
 It allows to track positions defined using [PlaholderAPI placeholders](https://www.spigotmc.org/wiki/placeholderapi-placeholders/).
 
+**Notes:**
+This tracker addon is an idea of [Shano_dekono](https://www.spigotmc.org/members/shano_dekono.529024/).
+Here is how he describes its usage:
+> You can use x & y placeholders to locate coordinates from different plugins
+> and MvdwPlaceholderAPI x and y placeholders if you have one of mvdw's plugins
+> aswell as MvdwPlaceholderAPI and PlaceholderAPI. You can then combine the Mvdw
+> Placeholders and PlaceholderAPI placeholders like in the example below so that
+> you have more x & y placeholders to play with. Enjoy **(quote from [plugin discussion thread](https://www.spigotmc.org/threads/simplecompass.351093/page-6#post-3313938))**
+
 ## How to install
 
 - Drop the [jar file](https://github.com/arboriginal/SCT-PapiPositionTracker/releases) into your `plugins/SimpleCompass/trackers` folder
