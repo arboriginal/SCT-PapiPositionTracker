@@ -34,7 +34,7 @@ public class PapiPositionTracker extends AbstractTracker {
   
   @Override
   public String version() {
-    return "3";
+    return "4";
   }
 
   // ----------------------------------------------------------------------------------------------

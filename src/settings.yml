@@ -1,7 +1,18 @@
-positions:
-  arboriginal: # Example of position of a player (require "otherplayer" addon for PlaceholderAPI)
-    x: "%otherplayer_locx_arboriginal%"
-    z: "%otherplayer_locz_arboriginal%"
+# You can find the default config with description of parameters here:
+# https://github.com/arboriginal/SCT-PapiPositionTracker/blob/master/src/settings.yml
+
+positions: {} # Names positions players can track, see example below ("{}" represents an empty list).
+
+# Example of positions:
+#
+# positions:
+#   arboriginal: # Example of position of a player (require "otherplayer" addon for PlaceholderAPI)
+#     x: "%otherplayer_locx_arboriginal%"
+#     z: "%otherplayer_locz_arboriginal%"
+#
+#   bed: # Example of position of player's bed (require "player" addon for PlaceholderAPI)
+#     x: "%player_bed_x%"
+#     z: "%player_bed_z%"
 
 settings:
   check_update: true # If true, when you (re)load the plugin, it try to check if a new version is available
@@ -16,7 +27,7 @@ settings:
 
 locales:
   en:
-    name: "papi"
+    name: "papi" # Only use alphabetic and numeric values, not space
 
     list: "{prefix}&rNamed positions: {list}."
     list_empty: "{prefix}&rNo named positions."
@@ -43,8 +54,10 @@ locales:
         &r- &c/{command} &e{tracker} &6{STOP} &3<name>
         &7  End the tracking of this named position.
 
+    target_auto_disabled: "{prefix}&3You've reached &b{target}&3, tracking disabled in &b{tracker}&3 tracker."
+
   fr:
-    name: "papi"
+    name: "papi" # N'utilise que des chiffres et des lettres, pas d'espace
 
     list: "{prefix}&rPositions nommées : {list}."
     list_empty: "{prefix}&rAucune position nommée."
@@ -70,3 +83,5 @@ locales:
       STOP: |
         &r- &c/{command} &e{tracker} &6{STOP} &3<nom>
         &7  Arrête le pistage d'une position nommée.
+
+    target_auto_disabled: "{prefix}&3Tu as atteint &b{target}&3, pistage désactivé dans le tracker &b{tracker}&3."
