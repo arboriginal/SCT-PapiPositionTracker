@@ -1,8 +1,9 @@
 # You can find the default config with description of parameters here:
 # https://github.com/arboriginal/SCT-PapiPositionTracker/blob/master/src/settings.yml
-
-positions: {} # Names positions players can track, see example below ("{}" represents an empty list).
-
+#
+# Permissions for this tracker are listed here:
+# https://github.com/arboriginal/SCT-PapiPositionTracker/blob/master/README.md#permissions
+#
 # Example of positions:
 #
 # positions:
@@ -14,9 +15,13 @@ positions: {} # Names positions players can track, see example below ("{}" repre
 #     x: "%player_bed_x%"
 #     z: "%player_bed_z%"
 
+positions: {} # Names positions players can track, see example below ("{}" represents an empty list).
+
 settings:
   check_update: true # If true, when you (re)load the plugin, it try to check if a new version is available
-  
+  autoload_target: false # If true, permissions "scompass.track.auto.PAPI_POSITION.<name>" are activated
+  inactive_target: false # If true, inactive targets will be added to compasses too (can affect performances and disturb display)
+
   symbol: "§6♅" # Symbol displayed on the compass to represent this kind of trackers positions.
   temp:   "☧"   # Advanced: Symbol temporary used by the plugin, must be unique, 1 char and not used in "symbol".
 
@@ -24,6 +29,10 @@ settings:
 
   limits:
     START: 2 # Number of maximum simultaneous positions a player (from this tracker) can track
+
+  # Require settings.inactive_target: true
+  inactive_symbol: "§7♅" # Symbol displayed on the compass to represent inactive targets of this kind of trackers positions.
+  inactive_temp:   "☲"   # Advanced: Symbol temporary used by the plugin, must be unique, 1 char and not used in "symbol" nor "inactive_symbol".
 
 locales:
   en:
