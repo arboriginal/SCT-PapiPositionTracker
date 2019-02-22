@@ -34,6 +34,11 @@ settings:
   inactive_symbol: "§7♅" # Symbol displayed on the compass to represent inactive targets of this kind of trackers positions.
   inactive_temp:   "☲"   # Advanced: Symbol temporary used by the plugin, must be unique, 1 char and not used in "symbol" nor "inactive_symbol".
 
+  # Those parameters are used to highlight active targets when you facing them
+  hl_angle: 0      # Angle in degree (integer) centered on compass middle point to be considered as faced (for example 30 means from 60° to 120°)
+  hl_symbol: "§b♅" # Symbol displayed on the compass to represent active targets you are facing (require hl_angle > 0)
+  hl_temp: "♵"     # Advanced: Symbol temporary used by the plugin (only used when hl_angle > 0)
+
 locales:
   en:
     name: "papi" # Only use alphabetic and numeric values, not space
