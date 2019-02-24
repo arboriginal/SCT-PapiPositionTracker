@@ -11,6 +11,13 @@ Here is how he describes its usage:
 > aswell as MvdwPlaceholderAPI and PlaceholderAPI. You can then combine the Mvdw
 > Placeholders and PlaceholderAPI placeholders like in the example below so that
 > you have more x & y placeholders to play with. Enjoy **(quote from [plugin discussion thread](https://www.spigotmc.org/threads/simplecompass.351093/page-6#post-3313938))**
+>
+> ```yaml
+> positions:
+>   town:
+>     x: '%mvdw_towny_town_home_x%'
+>     z: '%mvdw_towny_town_home_z%'
+> ```
 
 ## How to install
 
